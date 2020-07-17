@@ -27,11 +27,7 @@ this关键字是用来引用当前实例的变量或方法
 
 super是在子类来访问父类的属性和方法
 
-
-
 ![image-20200717152555264](C:\Users\yueshisheng\AppData\Roaming\Typora\typora-user-images\image-20200717152555264.png)
-
-
 
 注意：this和super不能用在static方法，this是因为和实例相关，super体现在继承，其实也和实例有关，先有实例才能有继承
 
@@ -78,11 +74,7 @@ abstract class AbstractStringBuilder implements Appendable, CharSequence {
 
 StringBuilder没有加同步锁，是线程不安全的，性能更优，因为上锁和解锁是很费时间的，与之对应的，StringBuffer有线程锁，性能低
 
-
-
 ![image-20200717154358882](C:\Users\yueshisheng\AppData\Roaming\Typora\typora-user-images\image-20200717154358882.png)
-
-
 
 ### Object的常见方法
 
@@ -145,19 +137,11 @@ public class test1 {
 
 为什么要有hashcode？
 
-
-
 ![image-20200717173135209](C:\Users\yueshisheng\AppData\Roaming\Typora\typora-user-images\image-20200717173135209.png)
-
-
 
 比较时先看hashcode是不是一样，然后再用equal来进行比较
 
-
-
 ![image-20200717173310278](C:\Users\yueshisheng\AppData\Roaming\Typora\typora-user-images\image-20200717173310278.png)
-
-
 
 equal函数默认是比较两个对象的地址是不是一样，因为用的是==
 
